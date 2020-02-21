@@ -1,5 +1,5 @@
 <?php
-$dbh = new PDO("mysql:host=localhost;dbname=mydata","root","googly");
+$dbh = new PDO("mysql:host=localhost;dbname=mydata","root","");
 $id = isset($_GET['id'])? $_GET['id'] : "";
 $stat = $dbh->prepare("select * from myblob where id=?");
 $stat->bindParam(1,$id);
