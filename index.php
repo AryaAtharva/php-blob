@@ -6,7 +6,7 @@
 </head>
 <body>
     <?php
-    $dbh = new PDO("mysql:host=localhost;dbname=mydata","root","googly");
+    $dbh = new PDO("mysql:host=localhost;dbname=mydata","root","");
     if(isset($_POST['btn'])){
         $name = $_FILES['myfile']['name'];
         $mime = $_FILES['myfile']['type'];
